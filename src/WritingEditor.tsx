@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent } from 'react';
+import React, { useState } from 'react';
 
 const WritingEditor: React.FC = () => {
   const [text, setText] = useState<string>('');
