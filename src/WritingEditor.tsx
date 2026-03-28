@@ -68,7 +68,7 @@ const WritingEditor: React.FC = () => {
     setIsSaving(true);
     setSaveMessage(null);
     try {
-      const res = await fetch('http://localhost:3001/save-session', {
+      const res = await fetch('https://vinotes-l6kf.onrender.com/save-session', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ sessionData: { wordCount, totalKeystrokes, backspaceCount, pasteCount, score, status } })
